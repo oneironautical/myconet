@@ -23,8 +23,8 @@
     
 </script>
 
-
-{#await IsAuthenticated()}
+<Component slot="home"/>
+<!--{#await IsAuthenticated()}
 <span>Checking Authentication</span>
 {:then authenticated}
   {#if (authenticated) }
@@ -32,4 +32,4 @@
   {:else}
     <Login/>
   {/if}
-{/await}
+{/await}-->

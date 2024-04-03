@@ -7,8 +7,68 @@
     import Logout from '../components/Logout.svelte';
     
     </script>
-    
-    <AuthorizeView let:user_identity_email>
+
+<div id='navbar'>
+  <div id='test'>this is the app</div>
+  <div id='navbar-background'></div>
+  
+ </div>
+
+<main>
+  <div id='contain'>
+    <div class="card">
+  
+      <WeatherForecast/>
+    </div>
+     <div class="card">
+       <WeatherForecast/>
+     </div>
+    <div class="card">
+      <WeatherForecast/>
+      </div>
+      <div class="card">
+        <WeatherForecast/>
+      </div>
+    </div>
+</main>
+
+<style>
+
+ #contain{
+  margin-top: 10vh; 
+ }
+  #test{
+  z-index: 1;
+  }
+  #navbar {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #242424;
+  }
+
+  #navbar-background {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd37BWRvqIAkWiN6vbz5qSVKsYzdZw0ilvLMF7yOPM9g&s");
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: .01;
+  }
+
+
+</style>
+
+    <!--<AuthorizeView let:user_identity_email>
     <main>
         <div>
           <a href="https://svelte.dev" target="_blank" rel="noreferrer">
@@ -23,6 +83,7 @@
           <WeatherForecast/>
         </div>
       </main>
+      
       
       <style>
         .logo {
@@ -39,4 +100,4 @@
         }
         
       </style>
-    </AuthorizeView>
+    </AuthorizeView>-->
