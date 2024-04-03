@@ -9,7 +9,7 @@
     </script>
 
 <div id='navbar'>
-  <div id='test'>this is the app</div>
+  <div id='test'>Ya Boi</div>
   <div id='navbar-background'></div>
   
  </div>
